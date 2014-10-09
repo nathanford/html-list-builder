@@ -1,0 +1,94 @@
+/* Site */
+
+#site #main p, #site #main li {
+	max-width: 44em;
+}
+
+#site li {
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+}
+
+#signin #main, #site #main {
+	padding-top: 6.5em;
+	min-height: calc(100% - 10.5em);
+}
+
+@media only screen and (max-width: 900px) {
+
+	#site #main {
+		padding-top: 2em;
+		min-height: 0;
+	}
+
+}
+
+@media only screen and (max-width: 800px) {
+
+	#site #main {
+		padding: 0 0 4em;
+	}
+
+}
+
+#site-header {
+	padding: 1em 2em 2em;
+	color: #fff;
+	background-color: #333344;
+	width: 100%;
+	margin: -2em -2em 1em;
+}
+
+#site-header .action {
+	float: right;
+	color: #fff;
+	padding: 0.5em 0 0;
+}
+
+@media only screen and (max-width: 730px) {
+
+#site-header .action {
+	float: none;
+	color: #fff;
+	padding: 0 0 1em;
+}
+
+}
+
+.site-heading {
+	font-size: 30px;
+	font-weight: 700;
+	padding-bottom: 0.2em;
+	color: #FA9C66;
+}
+
+.site-heading span {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 730px) {
+
+.site-heading {
+	font-size: 24px;
+}
+
+}
+
+
+.site-sub-heading {
+	font-size: 14px;
+	font-weight: 400;
+	color: #ddd;
+}
+
+#site-page section {
+	padding: 1em 0;
+	color: #666;
+}
+
+.site-section-heading {
+	font-size: 18px;
+	color: #333;
+	padding-bottom: 0.5em;
+}

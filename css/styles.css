@@ -1,0 +1,469 @@
+/* 
+
+Text Palette
+Web site: http://textpalette.com
+Twitter: http://twitter.com/textpalette
+
+Index
+1. Reset
+2. Clearfix
+3. General Typography & Layout
+4. More specific css
+
+/* 1. Reset ---------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+mark {
+	background-color: #ff9;
+	color: #000; 
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	width: 100%;
+	max-width: 100%;
+}
+
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;   
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+
+/* 2. Clearfix -------------------------------- */
+/* More info: http://nicolasgallagher.com/micro-clearfix-hack/
+
+For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/* 2. General Styles -------------------------------- */
+
+body {
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #333;
+	background: #f6f6f6;
+}
+
+article p + p {
+	margin-top: 20px;
+}
+
+blockquote {
+	margin: 0 2em 1em;
+	color: #333;
+}
+
+cite {
+	display: block;
+}
+
+pre, code {
+	font-family: Consolas, "Bitstream Vera Sans Mono", "Andale Mono", Monaco, "DejaVu Sans Mono", "Lucida Console", monospace;
+}
+
+a {
+	color: #8687B6;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(37,108,164);
+	text-decoration: underline;
+}
+
+h3 {
+	display: block;
+	width: 100%;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd + dt {
+	margin-top: 10px;
+}
+
+::selection {
+	background: #B4D5FF; /* Safari */
+	}
+::-moz-selection {
+	background: #B4D5FF; /* Firefox */
+}
+
+#main {
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* Box */
+
+.box, #list-structure {
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 3.5em;
+	height: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+h2 {
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 2;
+	padding: 1em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+ul {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+li {
+	background-color: #fff;
+	color: #008DCF;
+	border-radius: 3px;
+	display: block;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+}
+
+li span {
+	display: block;
+	padding: 0.5em 1em;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+.list-header {
+	font-size: 12px;
+	color: #666;
+	padding: 0.5em;
+	background: none;
+}
+
+ul li {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#elements {
+	width: 150px;
+	left: 0;
+	padding: 0;
+	position: relative;
+	z-index: 100;
+}
+
+#list-elements {
+	padding: 0 0.5em 0;
+	box-sizing: border-box;
+	background-color: #f6f6f6;
+}
+
+#elements h2 {
+	position: relative;
+}
+
+#list-favorites {
+	padding-bottom: 1em;
+}
+
+#html {
+	position: absolute;
+	top: 0;
+	left: 150px;
+	width: 300px;
+}
+
+#output, #render {
+	position: absolute;
+	top: 0;
+	left: 450px;
+	width: calc(100% - 450px);
+}
+
+#render {
+	z-index: 100;
+	background: #000;
+	color: #fff;
+}
+
+#list-structure {
+	border: none;
+}
+
+#body, #body-children {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#body-children {
+	padding-top: 5.5em !important;
+	margin-top: 0 !important;
+	background-color: #f6f6f6 !important;
+	padding-right: 1em !important;
+}
+
+#list-structure li {
+	padding: 0;
+	background: none;
+}
+
+#list-structure .list-locked {
+	background-color: #fff;
+	padding-bottom: 2em;
+	padding-top: 1em;
+	color: #999;
+	border-top: 1px solid #999;
+}
+
+#list-structure .children, #list-structure .child {
+	display: block;
+	box-sizing: border-box;
+}
+
+#list-structure .child > span {
+	padding: 0.5em 0;
+	text-indent: 0.5em;
+	position: relative;
+	display: block;
+	z-index: 2;
+	background-color: #fff;
+}
+
+#list-structure .children {
+	margin-top: -33px;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	padding: 33px 0 0 1em;
+	background: none;
+}/*
+
+#list-structure .children .children > li:first-child {
+	margin-top: 0.8em;
+}*/
+
+.child.open {
+	z-index: 100;
+}
+
+.child.open > span, .selected span {
+	background-color: #008DCF !important;
+	border-color: #f6f6f6 !important;
+	color: #fff !important;
+}
+
+#output {
+	background: #f6f6f6;
+}
+
+#text-html {
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5em 1em 1em;
+	width: 100%;
+	height: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+.html {
+	color: #999;
+}
+
+#body-html {
+	padding-left: 1em;
+	color: #333;
+}
+
+#render {
+	display: none;
+}
+
+#generate, #validate {
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	z-index: 100;
+}
+
+#validate {
+	right: 7em;
+}
+
+#attrPrompt {
+	width: 25%;
+	padding: 2em;
+	position: absolute;
+	top: 10%;
+	left: 20%;
+	background: #fff;
+	z-index: 1000;
+	border: 1px solid #ddd;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	box-sizing: border-box;
+	display: none;
+	min-width: 350px;
+}
+
+fieldset {
+	padding: 1em 0;
+}
+
+label {
+	width: 20%;
+	padding: 0.5em;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+}
+
+input {
+	width: 80%;
+	padding: 0.5em;
+	display: block;
+	float: left;
+	box-sizing: border-box;
+}
+
+.submit-area {
+	padding-left: 20%;
+	margin-top: 1em;
+	padding-top: 1em;
+	border-top: 1px solid #ddd;
+}
+
+button {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2em;
+	font-size: 14px;
+	padding: 0.5em 1em;
+}
+
+.ui-draggable-dragging {
+	z-index: 1000;
+}
